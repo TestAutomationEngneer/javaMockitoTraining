@@ -6,7 +6,7 @@ Zadanie domowe:
 - pole isAutomaticGear, typu boolean
 - pole market, typu Market: String name, List<Country> countries, (każdy Market ma listę co najmniej 3 krajów w których chce sprzedawać auta)
 - pole segment, typu String. Możliwe wartości: standard, medium, premium
-- ArrayList dimensions, typu Dimension: int high, int width, int trankCapacity
+- ArrayList dimension, typu Dimension: int high, int width, int trankCapacity
  
 2. Dodatkowe klasy: 
     Producent: String model, String type (np: Toyota Corolla)
