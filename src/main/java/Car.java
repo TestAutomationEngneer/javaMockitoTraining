@@ -6,16 +6,37 @@ public class Car {
     public boolean isAutomaticGear;
     Market market;
     public String segment;
-    Dimension dimensions;
+    ArrayList<Dimension> dimensions;
 
-    ArrayList<Dimension> dimensionList;
-    ArrayList<Country> countries;
-
-    public Car(Manufacturer manufacturer, boolean isAutomaticGear, Market market, String segment, Dimension dimension) {
+    public Car(Manufacturer manufacturer, boolean isAutomaticGear, Market market, String segment, ArrayList<Dimension> dimensions) {
         this.manufacturer = manufacturer;
         this.isAutomaticGear = isAutomaticGear;
         this.market = market;
         this.segment = segment;
-        this.dimensions = dimension;
+        this.dimensions = dimensions;
+    }
+
+    public Manufacturer getManufacturer() {
+        return manufacturer;
+    }
+
+    public boolean isAutomaticGear() {
+        return isAutomaticGear;
+    }
+
+    public Market getMarket() {
+        return market;
+    }
+
+    public ArrayList<Dimension> getDimensions() {
+        return dimensions;
+    }
+
+    public String getSegment() {
+        return segment;
+    }
+    @Override
+    public String toString() {
+        return " dimensions: " + getDimensions().toString();
     }
 }
