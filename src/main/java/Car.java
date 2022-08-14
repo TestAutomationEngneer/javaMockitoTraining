@@ -31,12 +31,7 @@ public class Car {
     public ArrayList<Dimension> getDimensions() {
         return dimensions;
     }
-
     public String getSegment() {
         return segment;
-    }
-    @Override
-    public String toString() {
-        return " dimensions: " + getDimensions().toString();
     }
 }

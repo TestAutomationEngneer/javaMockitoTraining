@@ -9,4 +9,17 @@ public class Market {
         this.name = name;
         this.countries = countries;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Country> getCountries() {
+        return countries;
+    }
+
+    @Override
+    public String toString() {
+        return getName()+","+" Countries: "+getCountries();
+    }
 }

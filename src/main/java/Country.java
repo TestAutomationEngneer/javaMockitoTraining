@@ -7,4 +7,17 @@ public class Country {
         this.countryName = countryName;
         this.countryChar = countryChar;
     }
+
+    public String getCountryName() {
+        return countryName;
+    }
+
+    public char getCountryChar() {
+        return countryChar;
+    }
+
+    @Override
+    public String toString() {
+        return getCountryName() + " - " + getCountryChar();
+    }
 }
