@@ -24,6 +24,6 @@ public class Dimension {
 
     @Override
     public String toString() {
-        return "height (cm): " + getHeight() + " width (cm): " + getWidth() + " trunk capacity (l): " + getTrunkCapacity();
+        return "height (cm): " + getHeight() + "," + " width (cm): " + getWidth() + "," + " trunk capacity (l): " + getTrunkCapacity();
     }
 }

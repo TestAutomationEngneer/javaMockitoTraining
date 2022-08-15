@@ -97,7 +97,6 @@ public class Main {
                     + " Segment: " + car.getSegment() + "," + " Dimensions:" + car.getDimensions().toString());
 
         System.out.println("Countries with BMW Manufacturer and Automatic Gear:");
-
         for (Car car : carList) {
             if (car.getManufacturer().getModel().equals("BMW")) {
                 if (car.isAutomaticGear()) {

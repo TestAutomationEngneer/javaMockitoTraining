@@ -18,6 +18,6 @@ public class Manufacturer {
 
     @Override
     public String toString() {
-        return " Model: " + getModel() + " type: " + getType();
+        return " Model: " + getModel() +"," + " type: " + getType();
     }
 }
