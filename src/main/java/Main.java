@@ -99,7 +99,7 @@ public class Main {
         System.out.println("Countries with BMW Manufacturer and Automatic Gear:");
 
         for (Car car : carList) {
-            if (car.getManufacturer().equals(bmw)) {
+            if (car.getManufacturer().getModel().equals("BMW")) {
                 if (car.isAutomaticGear()) {
                     System.out.println(car.getMarket().getCountries());
                 }
