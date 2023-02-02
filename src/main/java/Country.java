@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Country {
 
     public String countryName;
@@ -14,6 +16,19 @@ public class Country {
 
     public char getCountryChar() {
         return countryChar;
+    }
+
+    public List<String> getStringList() {
+        return List.of("Item1", "Item2");
+    }
+    public int calculateProcent(boolean isProcent) {
+        int result;
+        return result = (isProcent) ? 20 : 150;
+    }
+
+    public int countriesOfTheWorld(boolean toggle) {
+        int result;
+        return result = (toggle) ? 123: 0;
     }
 
     @Override

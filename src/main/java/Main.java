@@ -90,15 +90,15 @@ public class Main {
         carList.add(new Car(vw1, false, cargo, "premium", dimensions9));
         carList.add(new Car(bmw2, true, taxi, "standard", dimensions7));
 
-        System.out.println("Complete list of cars:");
-        for (Car car : carList)
-            System.out.println(car.getManufacturer() + "," + " is automatic: "
-                    + car.isAutomaticGear() + "," + " Market: " + car.getMarket() + ","
-                    + " Segment: " + car.getSegment() + "," + " Dimensions:" + car.getDimensions().toString());
+//        System.out.println("Complete list of cars:");
+//        for (Car car : carList)
+//            System.out.println(car.getManufacturer() + "," + " is automatic: "
+//                    + car.isAutomaticGear() + "," + " Market: " + car.getMarket() + ","
+//                    + " Segment: " + car.getSegment() + "," + " Dimensions:" + car.getDimensions().toString());
 
         System.out.println("Countries with BMW Manufacturer and Automatic Gear:");
         for (Car car : carList) {
-            if (car.getManufacturer().getModel().equals("BMW")) {
+            if (car.getManufacturer().getModel().equals("TESLA")) {
                 if (car.isAutomaticGear()) {
                     System.out.println(car.getMarket().getCountries());
                 }
