@@ -29,10 +29,6 @@ class BonusServiceTest {
         employeeRepository.findAll().forEach(System.out::println);
         actualList =   bonusService.calculateBonus(1.5);
 
-        System.out.println("List after calculating");
-        actualList.forEach(System.out::println);
-
-
         System.out.println("Original List AFTER calculating");
         employeeRepository.findAll().forEach(System.out::println);
 
@@ -55,9 +51,6 @@ class BonusServiceTest {
         when(employeeRepository.findAll()).thenReturn((expectedList));
         bonusService = new BonusService(employeeRepository);
         actualList =   bonusService.calculateBonus(1.5);
-
-        System.out.println("Actual mocked List after calculating");
-        actualList.forEach(System.out::println);
 
 
         //then

@@ -1,37 +1,37 @@
-import java.util.ArrayList;
-
 public class Car {
 
-    Manufacturer manufacturer;
-    public boolean isAutomaticGear;
-    Market market;
-    public String segment;
-    ArrayList<Dimension> dimensions;
+   private Engine engine;
+   private String producer;
 
-    public Car(Manufacturer manufacturer, boolean isAutomaticGear, Market market, String segment, ArrayList<Dimension> dimensions) {
-        this.manufacturer = manufacturer;
-        this.isAutomaticGear = isAutomaticGear;
-        this.market = market;
-        this.segment = segment;
-        this.dimensions = dimensions;
+    public Car(Engine engine, String producer) {
+        this.engine = engine;
+        this.producer = producer;
     }
 
-    public Manufacturer getManufacturer() {
-        return manufacturer;
+    public Car() {
     }
 
-    public boolean isAutomaticGear() {
-        return isAutomaticGear;
+    public Engine getEngine() {
+        return engine;
     }
 
-    public Market getMarket() {
-        return market;
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
-    public ArrayList<Dimension> getDimensions() {
-        return dimensions;
+    public String getProducer() {
+        return producer;
     }
-    public String getSegment() {
-        return segment;
+
+    public void setProducer(String producer) {
+        this.producer = producer;
+    }
+
+    public int calculatePricePlusVat(int price) {
+       return price+3333;
+    }
+
+    public int doorCount() {
+        return 4;
     }
 }
